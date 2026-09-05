@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsha Mahamuni | Python Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Utkarsha Mahamuni, a Python Developer specializing in Python, MySQL, React.js, PHP, and AI Tools. Transforming ideas into clean applications.">
+    <meta name="keywords" content="Utkarsha Mahamuni, Python Developer, Software Engineer, Web Developer, Portfolio, Savitribai Phule Pune University">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar-header" data-offset="150">
+    <!-- Background Elements -->
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+    <div class="grid-overlay"></div>
+    
+    <!-- Floating Particle Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+    
+    <!-- Cursor Spotlight -->
+    <div class="cursor-spotlight" id="cursor-spotlight"></div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar-header">
+        <div class="container navbar-container">
+            <a href="#" class="logo">
+                <span class="logo-bracket">&lt;</span>Utkarsha<span class="logo-dot">.</span><span class="logo-role">Dev</span><span class="logo-bracket">&gt;</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#home-section" class="nav-link active">Home</a>
+                <a href="#about-section" class="nav-link">About</a>
+                <a href="#education-section" class="nav-link">Education</a>
+                <a href="#skills-section" class="nav-link">Skills</a>
+                <a href="#projects-section" class="nav-link">Projects</a>
+                <a href="#certification-section" class="nav-link">Certifications</a>
+                <a href="#contact-section" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark/light theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="#contact-section" class="btn btn-primary btn-sm">Hire Me</a>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav">
+        <button class="mobile-nav-close" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="#home-section" class="mobile-nav-link">Home</a>
+        <a href="#about-section" class="mobile-nav-link">About</a>
+        <a href="#education-section" class="mobile-nav-link">Education</a>
+        <a href="#skills-section" class="mobile-nav-link">Skills</a>
+        <a href="#projects-section" class="mobile-nav-link">Projects</a>
+        <a href="#certification-section" class="mobile-nav-link">Certifications</a>
+        <a href="#contact-section" class="mobile-nav-link">Contact</a>
+        <div class="mobile-nav-actions">
+            <a href="#contact-section" class="btn btn-primary">Hire Me</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home-section" class="hero-section hero-redesign">
+            <div class="container hero-container">
+                <div class="hero-content reveal reveal-left">
+                    <span class="subheading text-primary-gradient">Welcome to my space</span>
+                    <h1 class="hero-title mt-2">
+                        I'm <span class="text-gradient">Utkarsha Mahamuni</span>
+                    </h1>
+                    <h2 class="hero-subtitle mb-4">
+                        A <span id="typewriter" class="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                    </h2>
+                    <div class="hero-actions">
+                        <a href="#contact-section" class="btn btn-primary">
+                            <span>Hire Me</span>
+                            <i data-lucide="send"></i>
+                        </a>
+                        <a href="#projects-section" class="btn btn-outline">
+                            <span>My Works</span>
+                        </a>
+                    </div>
+                    <div class="hero-badge mt-4" style="margin-top: 1.5rem;">
+                        <span class="pulse-dot"></span> Open for Opportunities
+                    </div>
+                </div>
+
+                <div class="hero-image-side reveal reveal-right">
+                    <div class="hero-img-card">
+                        <div class="hero-img-backdrop"></div>
+                        <img src="assets/profile_photo.png" alt="Utkarsha Mahamuni" class="hero-profile-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about-section" class="about-section section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Left: Avatar & Highlights -->
+                    <div class="about-column-left reveal reveal-left">
+                        <div class="about-image-card">
+                            <div class="about-image-glow"></div>
+                            <img src="assets/profile_photo.png" alt="Utkarsha Mahamuni About" class="about-profile-img">
+                        </div>
+                    </div>
+
+                    <!-- Right: Story & Profile Info List -->
+                    <div class="about-column-right reveal reveal-right">
+                        <div class="section-header text-left">
+                            <span class="big-watermark">About</span>
+                            <h2 class="section-title">About Me</h2>
+                        </div>
+                        <p class="about-intro">
+                            I am a **Python Developer Fresher** with a strong logical foundation in software engineering, database management, and modern web architectures. Equipped with knowledge of **Python, MySQL, React.js, PHP, and CSS**, I love exploring automated pipelines and integrating **AI workflows** to create clean, responsive user experiences.
+                        </p>
+                        
+                        <ul class="about-info-list mt-4">
+                            <li><span class="info-label">Name:</span> <span class="info-val">Utkarsha Sachin Mahamuni</span></li>
+                            <li><span class="info-label">Education:</span> <span class="info-val">B.Sc. Computer Science</span></li>
+                            <li><span class="info-label">Address:</span> <span class="info-val">Baramati, Maharashtra, India</span></li>
+                            <li><span class="info-label">Email:</span> <span class="info-val"><a href="mailto:utkarshamaha2004@gmail.com">utkarshamaha2004@gmail.com</a></span></li>
+                            <li><span class="info-label">Phone:</span> <span class="info-val"><a href="tel:+918788622805">+91 8788622805</a></span></li>
+                        </ul>
+
+                        <div class="about-counter-action mt-5">
+                            <div class="counter-box">
+                                <span class="counter-num text-gradient">05+</span>
+                                <span class="counter-label">Professional Credentials</span>
+                            </div>
+                            <a href="assets/Utkarsha_Python_Developer_Resume.pdf" download="Utkarsha_Mahamuni_Resume.pdf" class="btn btn-primary" id="cv-download-btn">
+                                <i data-lucide="download"></i>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education-section" class="education-section section-padding bg-secondary-adjust">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="big-watermark">Timeline</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+
+                <div class="timeline-grid">
+                    <!-- Education 1 -->
+                    <div class="timeline-card reveal reveal-left delay-1">
+                        <div class="timeline-bullet"></div>
+                        <div class="timeline-date">2022 - 2025</div>
+                        <h3 class="timeline-degree">Bachelor of Science (B.Sc.) in Computer Science</h3>
+                        <span class="timeline-inst">Tuljaram Chaturchand College, Baramati (Savitribai Phule Pune University)</span>
+                        <p class="timeline-desc mt-3">
+                            Developed a rigorous conceptual grounding in computational systems, relational databases, data structures, object-oriented concepts, and client-server web applications. Completed academic projects focused on practical problem-solving.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills-section" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="big-watermark">Expertise</span>
+                    <h2 class="section-title">My Skills</h2>
+                </div>
+
+                <div class="skills-split-grid">
+                    <!-- Column 1: Core Coding & Data -->
+                    <div class="skills-box reveal reveal-left">
+                        <h3 class="skills-box-title"><i data-lucide="code-2" class="text-primary mr-2"></i> Python & Programming</h3>
+                        
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>Python (Core & OOP)</h3>
+                                <span class="progress-percent" data-target="85">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-1" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>Data Science (NumPy, Pandas)</h3>
+                                <span class="progress-percent" data-target="75">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-2" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>MySQL & Database Management</h3>
+                                <span class="progress-percent" data-target="80">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-3" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>C Language</h3>
+                                <span class="progress-percent" data-target="70">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-1" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Web & Tools -->
+                    <div class="skills-box reveal reveal-right">
+                        <h3 class="skills-box-title"><i data-lucide="layout" class="text-accent mr-2"></i> Front-End & Web Dev</h3>
+
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>HTML5 & CSS3</h3>
+                                <span class="progress-percent" data-target="90">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-4" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>React.js & JavaScript</h3>
+                                <span class="progress-percent" data-target="70">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-5" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>Backend (Node.js & PHP)</h3>
+                                <span class="progress-percent" data-target="75">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-6" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-wrap">
+                            <div class="progress-info">
+                                <h3>Git, GitHub & VS Code</h3>
+                                <span class="progress-percent" data-target="80">0%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill color-2" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strengths Grid (Tag Cloud) -->
+                <div class="strengths-wrapper reveal mt-5">
+                    <h3 class="strengths-title text-center mb-4">Core Strengths</h3>
+                    <div class="strengths-tags">
+                        <span class="strength-tag"><i data-lucide="check-circle-2"></i> Problem Solving</span>
+                        <span class="strength-tag"><i data-lucide="users"></i> Teamwork</span>
+                        <span class="strength-tag"><i data-lucide="zap"></i> Quick Learning</span>
+                        <span class="strength-tag"><i data-lucide="messages-square"></i> Communication</span>
+                        <span class="strength-tag"><i data-lucide="clock"></i> Time Management</span>
+                        <span class="strength-tag"><i data-lucide="bot"></i> AI Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects-section" class="projects-section section-padding bg-secondary-adjust">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="big-watermark">Works</span>
+                    <h2 class="section-title">Projects</h2>
+                </div>
+
+                <div class="projects-grid-redesign">
+                    <!-- Project 1: Agriculture Shop -->
+                    <div class="project-card-link reveal reveal-scale delay-1">
+                        <div class="project-img-wrapper">
+                            <div class="agriculture-visual">
+                                <div class="agri-header">
+                                    <span class="agri-badge">Farmer's Portal</span>
+                                    <i data-lucide="sprout" class="agri-leaf-icon"></i>
+                                </div>
+                                <div class="agri-items-mock">
+                                    <div class="agri-item-box" id="agri-item-1">
+                                        <span class="item-title">Organic Wheat</span>
+                                        <span class="item-price">₹45/kg</span>
+                                        <button class="buy-mock-btn" onclick="event.stopPropagation(); buyMockProduct('Organic Wheat', 45)">Add</button>
+                                    </div>
+                                    <div class="agri-item-box" id="agri-item-2">
+                                        <span class="item-title">Bio Fertilizer</span>
+                                        <span class="item-price">₹250/bag</span>
+                                        <button class="buy-mock-btn" onclick="event.stopPropagation(); buyMockProduct('Bio Fertilizer', 250)">Add</button>
+                                    </div>
+                                </div>
+                                <div class="agri-checkout-mock">
+                                    <span>🛒 Cart Items: <strong id="cart-count">0</strong></span>
+                                    <span>Total: <strong id="cart-total">₹0</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-overlay-info">
+                            <div class="project-cat">PHP / HTML5 / CSS3 / MySQL</div>
+                            <h3 class="project-name">Agriculture Online Farmer Shop</h3>
+                            <p class="project-hover-desc">A web application designed for farmers to directly sell products online, bypass middlemen, and track stock. Built custom PHP modules for vendor inventory tracking and user shopping carts.</p>
+                            <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.5rem;">
+                                <a href="https://github.com/utkarshamaha2004-svg" target="_blank" rel="noopener noreferrer" class="project-view-btn">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Student Management System -->
+                    <div class="project-card-link reveal reveal-scale delay-2">
+                        <div class="project-img-wrapper">
+                            <div class="student-sys-visual">
+                                <div class="sys-header">
+                                    <span>🎓 SMS Dashboard</span>
+                                    <span class="sys-status-badge">Authenticated</span>
+                                </div>
+                                <div class="student-records-table">
+                                    <div class="table-row table-head">
+                                        <span>Student</span><span>Roll</span><span>Grade</span>
+                                    </div>
+                                    <div class="table-row">
+                                        <span>Rohan S.</span><span>101</span><span class="grade-badge bg-green">A+</span>
+                                    </div>
+                                    <div class="table-row">
+                                        <span>Neha P.</span><span>102</span><span class="grade-badge bg-blue">A</span>
+                                    </div>
+                                    <div class="table-row">
+                                        <span>Amit K.</span><span>103</span><span class="grade-badge bg-purple">B+</span>
+                                    </div>
+                                </div>
+                                <button class="sms-mock-add-btn" onclick="event.stopPropagation(); addNewMockStudent()">
+                                    <i data-lucide="plus"></i> Add Mock Student
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-overlay-info">
+                            <div class="project-cat">HTML5 / CSS3 / MySQL / PHP</div>
+                            <h3 class="project-name">Student Management System</h3>
+                            <p class="project-hover-desc">An administrative automation tool mapping student profiles, query schemas, and security levels. Built login sessions, grade calculators, and robust database validation modules.</p>
+                            <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:0.5rem;">
+                                <a href="https://github.com/utkarshamaha2004-svg" target="_blank" rel="noopener noreferrer" class="project-view-btn">
+                                    <i data-lucide="github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification Section -->
+        <section id="certification-section" class="certification-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="big-watermark">Credentials</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1: CyberShiksha -->
+                    <div class="cert-card reveal reveal-scale delay-1" onclick="openCertModal('assets/CyberShiksha_Certificate.jpeg', 'Microsoft Philanthropies CyberShiksha Certificate', 'Course on Cyber Security completed with Grade B at Tuljaram Chaturchand College.')">
+                        <div class="cert-icon-box">
+                            <i data-lucide="shield-check" class="cert-icon text-cyan"></i>
+                        </div>
+                        <h3 class="cert-title">CyberShiksha Recognition</h3>
+                        <p class="cert-authority">Microsoft Philanthropies / ICT Academy</p>
+                        <span class="cert-date">Issued: May 2025</span>
+                        <div class="cert-hover-hint">Click to Preview</div>
+                    </div>
+
+                    <!-- Cert 2: AI Tools Workshop -->
+                    <div class="cert-card reveal reveal-scale delay-2" onclick="openCertModal('assets/AI_Tools_Workshop_Certificate.pdf', 'be10x AI Tools & ChatGPT Workshop', 'Verification of expertise in utilizing prompt structures, generative tools, and debugging scripts via ChatGPT.')">
+                        <div class="cert-icon-box">
+                            <i data-lucide="bot" class="cert-icon text-purple"></i>
+                        </div>
+                        <h3 class="cert-title">AI Tools Workshop</h3>
+                        <p class="cert-authority">be10x ChatGPT Program</p>
+                        <span class="cert-date">Issued: Nov 2025</span>
+                        <div class="cert-hover-hint">Click to Preview</div>
+                    </div>
+
+                    <!-- Cert 3: Tata GenAI -->
+                    <div class="cert-card reveal reveal-scale delay-3" onclick="openCertModal('assets/TATA_Analytics_Certificate.pdf', 'Tata GenAI Data Analytics Simulation', 'Completed job simulation on exploratory data analysis, predictive risk models, and GenAI storytelling pipelines.')">
+                        <div class="cert-icon-box">
+                            <i data-lucide="bar-chart-3" class="cert-icon text-pink"></i>
+                        </div>
+                        <h3 class="cert-title">Tata GenAI Data Analytics</h3>
+                        <p class="cert-authority">Forage Job Simulation</p>
+                        <span class="cert-date">Issued: Nov 2025</span>
+                        <div class="cert-hover-hint">Click to Preview</div>
+                    </div>
+
+                    <!-- Cert 4: Deloitte Data Analytics -->
+                    <div class="cert-card reveal reveal-scale delay-4" onclick="openCertModal('assets/Deloitte_Analytics_Certificate.pdf', 'Deloitte Data Analytics Simulation', 'Completed practical tasks in exploratory querying, data cleaning pipelines, and forensic accounting logic.')">
+                        <div class="cert-icon-box">
+                            <i data-lucide="database" class="cert-icon text-cyan"></i>
+                        </div>
+                        <h3 class="cert-title">Deloitte Data Analytics</h3>
+                        <p class="cert-authority">Forage Job Simulation</p>
+                        <span class="cert-date">Issued: Nov 2025</span>
+                        <div class="cert-hover-hint">Click to Preview</div>
+                    </div>
+
+                    <!-- Cert 5: Forage Data Labeling -->
+                    <div class="cert-card reveal reveal-scale delay-5" onclick="openCertModal('assets/Data_Labeling_Certificate.pdf', 'Data Labeling & PII Job Simulation', 'Acquired training on batch tagging, datasets preparation, formatting controls, and PII anonymization techniques.')">
+                        <div class="cert-icon-box">
+                            <i data-lucide="tag" class="cert-icon text-purple"></i>
+                        </div>
+                        <h3 class="cert-title">Data Labeling Simulation</h3>
+                        <p class="cert-authority">Forage Program</p>
+                        <span class="cert-date">Issued: Dec 2025</span>
+                        <div class="cert-hover-hint">Click to Preview</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dedicated Banner Section -->
+        <section class="hireme-banner section-padding">
+            <div class="hireme-backdrop"></div>
+            <div class="container">
+                <div class="hireme-content reveal">
+                    <h2>Dedicated <span class="text-gradient">Python Developer & Tech Enthusiast</span> Ready to Innovate</h2>
+                    <p class="mt-3">Open for entry-level positions and collaborative projects in software engineering, database management, and scripting.</p>
+                    <a href="#contact-section" class="btn btn-primary mt-4">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact-section" class="contact-section section-padding bg-secondary-adjust">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="big-watermark">Connect</span>
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+
+                <!-- Info Cards -->
+                <div class="contact-info-row reveal">
+                    <div class="contact-box-card">
+                        <div class="c-icon-wrapper">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Baramati, Pune, India</p>
+                    </div>
+
+                    <div class="contact-box-card">
+                        <div class="c-icon-wrapper">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <h3>Call Me</h3>
+                        <p><a href="tel:+918788622805">+91 8788622805</a></p>
+                    </div>
+
+                    <div class="contact-box-card">
+                        <div class="c-icon-wrapper">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:utkarshamaha2004@gmail.com">utkarshamaha2004@gmail.com</a></p>
+                    </div>
+
+                    <div class="contact-box-card">
+                        <div class="c-icon-wrapper">
+                            <i data-lucide="globe"></i>
+                        </div>
+                        <h3>Social Links</h3>
+                        <p>
+                            <a href="https://github.com/utkarshamaha2004-svg" target="_blank" rel="noopener noreferrer" style="margin-right:10px;">GitHub</a>|
+                            <a href="https://www.linkedin.com/in/utkarsha-mahamuni-64a4612b8" target="_blank" rel="noopener noreferrer" style="margin-left:10px;">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Form Wrapper -->
+                <div class="form-wrapper-block reveal mt-5">
+                    <h3 class="form-header-title">Send a Message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="form-name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="form-email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="form-subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="form-message" rows="6" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn btn-primary py-3 px-5">
+                                <span>Send Message</span>
+                            </button>
+                        </div>
+                        <div id="form-status" class="form-status-message mt-3"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="ftco-footer section-padding">
+        <div class="container footer-container">
+            <div class="footer-social-links">
+                <a href="https://www.linkedin.com/in/utkarsha-mahamuni-64a4612b8" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                    <i data-lucide="linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/utkarshamaha2004-svg" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                    <i data-lucide="github"></i> GitHub
+                </a>
+                <a href="mailto:utkarshamaha2004@gmail.com" class="footer-social-link">
+                    <i data-lucide="mail"></i> Email
+                </a>
+            </div>
+            <p class="copyright-text mt-4">&copy; 2026 Utkarsha Sachin Mahamuni. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Certificate Lightbox/Modal -->
+    <div id="cert-modal" class="cert-modal" onclick="closeCertModal()">
+        <div class="cert-modal-content" onclick="event.stopPropagation()">
+            <button class="cert-modal-close" onclick="closeCertModal()">&times;</button>
+            <h3 id="cert-modal-title">Certificate Title</h3>
+            <p id="cert-modal-desc" class="mb-4 text-muted">Description here</p>
+            <div id="cert-media-container" class="cert-media-container">
+                <!-- Media will be dynamically loaded here -->
+            </div>
+            <div class="cert-modal-actions mt-4">
+                <a id="cert-download-link" href="#" download class="btn btn-primary btn-sm">
+                    <i data-lucide="download"></i> Download File
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
